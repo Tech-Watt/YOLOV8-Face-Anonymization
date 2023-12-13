@@ -1,0 +1,3 @@
+ultralytics
+cvzone
+opencv-python 
