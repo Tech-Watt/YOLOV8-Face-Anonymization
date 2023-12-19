@@ -26,7 +26,8 @@ while cap.isOpened():
 
             cvzone.cornerRect(video,[x1,y1,w,h],l=9,rt=3)
             cvzone.cornerRect(mainvideo, [x1, y1, w, h], l=9, rt=3)
-
+            cvzone.putTextRect(video,'Anonymized OUTPUT',[0,36])
+            cvzone.putTextRect(mainvideo, 'Input Video', [0, 36])
             face = video[y1:y1+h,x1:x1+w]
             face = cv2.blur(face,(30,30))
             video[y1:y1+h,x1:x1+w] = face
